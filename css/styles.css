@@ -10146,10 +10146,34 @@ h3 {
   border-radius: 0.5rem;
   overflow: hidden;
 }
+.portfolio .portfolio-item > img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.portfolio .portfolio-item::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 0.75rem 1rem;
+  background: rgba(44, 62, 80, 0.88);
+  color: #fff;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  pointer-events: none;
+}
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
   transition: all 0.2s ease-in-out;
   opacity: 0;
   background-color: rgba(255, 94, 155, 0.9);
@@ -10159,6 +10183,64 @@ h3 {
 }
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.5rem;
+}
+.portfolio .portfolio-grid > div {
+  margin-top: 0 !important;
+  margin-bottom: 3rem !important;
+}
+.portfolio .portfolio-grid > div:nth-child(1) {
+  order: 18;
+}
+.portfolio .portfolio-grid > div:nth-child(2) {
+  order: 17;
+}
+.portfolio .portfolio-grid > div:nth-child(3) {
+  order: 16;
+}
+.portfolio .portfolio-grid > div:nth-child(4) {
+  order: 15;
+}
+.portfolio .portfolio-grid > div:nth-child(5) {
+  order: 14;
+}
+.portfolio .portfolio-grid > div:nth-child(6) {
+  order: 13;
+}
+.portfolio .portfolio-grid > div:nth-child(7) {
+  order: 12;
+}
+.portfolio .portfolio-grid > div:nth-child(8) {
+  order: 11;
+}
+.portfolio .portfolio-grid > div:nth-child(9) {
+  order: 10;
+}
+.portfolio .portfolio-grid > div:nth-child(10) {
+  order: 9;
+}
+.portfolio .portfolio-grid > div:nth-child(11) {
+  order: 8;
+}
+.portfolio .portfolio-grid > div:nth-child(12) {
+  order: 7;
+}
+.portfolio .portfolio-grid > div:nth-child(13) {
+  order: 6;
+}
+.portfolio .portfolio-grid > div:nth-child(14) {
+  order: 5;
+}
+.portfolio .portfolio-grid > div:nth-child(15) {
+  order: 4;
+}
+.portfolio .portfolio-grid > div:nth-child(16) {
+  order: 3;
+}
+.portfolio .portfolio-grid > div:nth-child(17) {
+  order: 2;
+}
+.portfolio .portfolio-grid > div:nth-child(18) {
+  order: 1;
 }
 
 .portfolio-modal .portfolio-modal-title {
